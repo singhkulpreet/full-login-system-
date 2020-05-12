@@ -1,0 +1,127 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+  
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 25px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /*.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }*/
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  .closebtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: yellow;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .closebtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    word-wrap: break-word;
+  }
+  
+  hr{
+      color: white;
+      border: 1px solid;
+  }
+
+
+
+  .row{
+    margin-left: 15%;
+}    
+.col-md-3{
+  height: 200px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.col-md-3:hover{
+  border-radius: 30px;
+}
+
+h4{
+  margin-top:40%;
+  text-align: center;  
+  color: white;
+}
+p{
+  text-align: center;
+  color: white;
+}
+#travel{ background-color: skyblue;}
+#entertainment{background-color: red;}
+#lifestyle{background-color: yellow;}
+#educational{background-color: green;}
+#business{background-color: darkcyan;}
+#gaming{background-color: darkorange;}
+#utility{background-color: sienna;}
+
+#logout{
+  cursor: pointer;
+}
+
+#weather{
+  background-image: url("../server/public/images/weather.png");
+  background-repeat: no-repeat;  
+}  
+h5{
+color: white;
+margin-top: 30px;
+}
+h5 span{
+color: black;
+}
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  
